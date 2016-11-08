@@ -1,0 +1,8 @@
+description: A short description of what JS Oxford is will go here.
+markdown: kramdown
+defaults:
+  -
+    scope:
+      path: ''
+    values:
+      layout: 'default'
