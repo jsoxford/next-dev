@@ -6,6 +6,7 @@
 $verticalFlow: 40px;
 $siteWidth: 960px;
 $jsoYellow: #F3DF49;
+$iconSize: 36px;
 
 html {
   font-family: Open Sans, sans-serif;
@@ -93,6 +94,22 @@ aside {
 
   li {
     display: inline-block;
+    padding: 0 .25em;
+  }
+  .svg-wrapper {
+    width: $iconSize;
+    height: $iconSize;
+
+    // Dirty tweaks for the wider Meetup logo...
+
+    &.svg-meetup {
+      width: $iconSize * 2;
+      overflow: hidden;
+
+      svg {
+        margin-top: -25%;
+      }
+    }
   }
 }
 nav {
