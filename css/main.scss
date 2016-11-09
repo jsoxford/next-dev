@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 $verticalFlow: 40px;
-$siteWidth: 960px;
+$siteWidth: 1100px;
 $jsoYellow: #F3DF49;
 $iconSize: 36px;
 
@@ -129,7 +129,7 @@ nav {
 }
 .content {
   width: 100%;
-  max-width: 600px;
+  max-width: 780px;
 }
 
 h4 {
@@ -148,6 +148,7 @@ h4 {
   font-weight: bold;
   text-decoration: none;
   text-align: center;
+  color: inherit;
 
   &-primary {
     background-color: $jsoYellow;
@@ -168,16 +169,19 @@ h4 {
 
   h2 {
     margin: 0;
-    margin-bottom: 10px;
   }
   h3 {
     margin: 0;
-    margin-bottom: $verticalFlow;
   }
 
   &-next {
     h2 {
-      max-width: 400px;
+      max-width: 550px;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-size: 30px;
     }
 
     h3,
@@ -185,7 +189,19 @@ h4 {
       margin-bottom: 20px;
     }
     h5 {
+      font-size: 20px;
       margin: 0;
+      margin-bottom: $verticalFlow;
+    }
+  }
+
+  &-old {
+    h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-size: 20px;
       margin-bottom: $verticalFlow;
     }
   }
